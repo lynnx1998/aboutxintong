@@ -45,7 +45,7 @@ const sortedTags = Object.entries(tagCounts)
   .slice(0, 20); // Top 20 tags
 ---
 
-<Layout title="Blog" schema={schema}>
+<Layout title="Blog" description={SITE.blogDescription} schema={schema}>
   <Breadcrumbs items={[{ name: 'Blog', href: '/posts' }]} />
 
   <div class="mb-10 sm:mb-12">
@@ -101,7 +101,7 @@ const sortedTags = Object.entries(tagCounts)
                   <span class="text-foreground group-hover:text-primary transition-colors">
                     {tag}
                   </span>
-                  <span class="text-muted-foreground text-[10px]">({count})</span>
+                  <span class="text-muted-foreground text-xs">({count})</span>
                 </a>
               ))
             }

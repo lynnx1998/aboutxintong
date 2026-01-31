@@ -7,7 +7,7 @@
 </script>
 
 <nav
-  class="flex items-center flex-wrap gap-x-2 gap-y-1 text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-8 sm:mb-12"
+  class="flex items-center flex-wrap gap-x-2 gap-y-1 text-xs font-bold uppercase tracking-widest text-muted-foreground mb-8 sm:mb-12"
   aria-label="Breadcrumb"
 >
   <a href="/" class="hover:text-primary transition-colors flex items-center shrink-0"> Home </a>

@@ -44,7 +44,8 @@ const appearances = (await getCollection('appearances'))
           Object.entries(SITE.social).map(([platform, link]) => (
             <a
               href={link}
-              class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-all no-underline"
+              aria-label={`Visit our ${platform} profile`}
+              class="text-xs font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-all no-underline"
             >
               {platform}
             </a>
@@ -72,14 +73,14 @@ const appearances = (await getCollection('appearances'))
       featuredPosts.length > 0 && (
         <section>
           <div class="flex items-baseline justify-between mb-8 sm:mb-12">
-            <h2 class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+            <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
               Featured
             </h2>
             <div class="h-px flex-1 mx-4 sm:mx-8 bg-border opacity-70" />
             <a
               href="/posts"
               aria-label="See all featured posts"
-              class="px-2 py-0.5 rounded-md text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all no-underline"
+              class="px-2 py-0.5 rounded-md text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all no-underline"
             >
               See all
             </a>
@@ -96,16 +97,14 @@ const appearances = (await getCollection('appearances'))
     <!-- 3. Latest Posts -->
     <section>
       <div class="flex items-baseline justify-between mb-8 sm:mb-12">
-        <h2
-          class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground"
-        >
+        <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
           Latest Writing
         </h2>
         <div class="h-px flex-1 mx-4 sm:mx-8 bg-border opacity-70"></div>
         <a
           href="/posts"
           aria-label="View writing archive"
-          class="px-2 py-0.5 rounded-md text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all no-underline"
+          class="px-2 py-0.5 rounded-md text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all no-underline"
           >Archive</a
         >
       </div>
@@ -117,16 +116,12 @@ const appearances = (await getCollection('appearances'))
     <!-- 4. Projects -->
     <section>
       <div class="flex items-baseline justify-between mb-8 sm:mb-12">
-        <h2
-          class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground"
-        >
-          Projects
-        </h2>
+        <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">Projects</h2>
         <div class="h-px flex-1 mx-4 sm:mx-8 bg-border opacity-70"></div>
         <a
           href="/projects"
           aria-label="View all projects"
-          class="px-2 py-0.5 rounded-md text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all no-underline"
+          class="px-2 py-0.5 rounded-md text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all no-underline"
           >All Projects</a
         >
       </div>
@@ -244,16 +239,14 @@ const appearances = (await getCollection('appearances'))
     <!-- 5. Talks / Appearances -->
     <section>
       <div class="flex items-baseline justify-between mb-8 sm:mb-12">
-        <h2
-          class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground"
-        >
+        <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
           Talks & Appearances
         </h2>
         <div class="h-px flex-1 mx-4 sm:mx-8 bg-border opacity-70"></div>
         <a
           href="/appearances"
           aria-label="View more appearances"
-          class="px-2 py-0.5 rounded-md text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all no-underline"
+          class="px-2 py-0.5 rounded-md text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-primary transition-all no-underline"
           >More</a
         >
       </div>
@@ -265,7 +258,7 @@ const appearances = (await getCollection('appearances'))
               class="flex items-center justify-between py-3 group no-underline transition-all hover:translate-x-1"
             >
               <div class="flex flex-col">
-                <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">
+                <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">
                   {item.data.event}
                 </span>
                 <span class="font-bold text-sm sm:text-base text-foreground group-hover:text-primary transition-colors leading-tight">

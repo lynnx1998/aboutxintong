@@ -37,7 +37,7 @@
       {#each navLinks as link (link.name)}
         <a
           href={link.href}
-          class="px-2 py-1 rounded-md text-[10px] sm:text-xs font-bold uppercase tracking-widest text-muted-foreground hover:bg-accent hover:text-primary transition-all shrink-0"
+          class="px-2 py-1 rounded-md text-xs font-bold uppercase tracking-widest text-muted-foreground hover:bg-accent hover:text-primary transition-all shrink-0"
         >
           {link.name}
         </a>

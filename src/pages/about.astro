@@ -38,7 +38,11 @@ const aboutTitle =
   aboutPost?.data.title || `I'm ${SITE.author}, a software designer and entrepreneur.`;
 ---
 
-<Layout title={`About | ${SITE.author}`} schema={schema}>
+<Layout
+  title={`About | ${SITE.author}`}
+  description={`Learn more about ${SITE.author}, a developer and designer focused on building premium web experiences.`}
+  schema={schema}
+>
   <Breadcrumbs items={[{ name: 'About', href: '/about' }]} />
 
   <div class="flex flex-col lg:flex-row gap-8 lg:gap-10">

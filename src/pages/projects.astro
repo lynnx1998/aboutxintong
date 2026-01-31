@@ -12,7 +12,7 @@ const schema = getBreadcrumbSchema([
 const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Layout title="Projects" schema={schema}>
+<Layout title="Projects" description={SITE.projectsDescription} schema={schema}>
   <Breadcrumbs items={[{ name: 'Projects', href: '/projects' }]} />
 
   <div class="mb-12 sm:mb-16 lg:mb-24">

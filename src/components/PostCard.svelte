@@ -34,7 +34,7 @@
       </h2>
       <time
         datetime={post.data.pubDate.toISOString()}
-        class="flex-shrink-0 text-[10px] sm:text-xs font-medium text-muted-foreground/60 tabular-nums uppercase tracking-widest"
+        class="flex-shrink-0 text-xs font-medium text-muted-foreground/80 tabular-nums uppercase tracking-widest"
       >
         {formatDate(post.data.pubDate)}
       </time>
@@ -47,7 +47,7 @@
     </p>
 
     <div
-      class="flex flex-wrap items-center gap-x-4 gap-y-2 text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-muted-foreground mt-1.5"
+      class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-bold uppercase tracking-widest text-muted-foreground mt-1.5"
     >
       {#if post.data.featured}
         <div class="flex items-center gap-1 text-primary">

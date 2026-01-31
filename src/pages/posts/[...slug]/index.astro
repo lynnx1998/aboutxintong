@@ -65,9 +65,9 @@ const schemas = [
               post.data.tags && post.data.tags.length > 0 && (
                 <>
                   <span class="text-border">•</span>
-                  <div class="flex gap-2 text-[10px] uppercase font-bold tracking-widest text-muted-foreground/60">
+                  <div class="flex gap-2 text-xs uppercase font-bold tracking-widest text-muted-foreground/80">
                     {post.data.tags.map((tag: string) => (
-                      <span class="opacity-70">#{tag}</span>
+                      <span class="opacity-80">#{tag}</span>
                     ))}
                   </div>
                 </>

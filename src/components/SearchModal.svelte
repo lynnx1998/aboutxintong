@@ -87,17 +87,13 @@
       <div class="max-h-[60vh] sm:max-h-[400px] 3xl:max-h-[600px] overflow-y-auto p-2 sm:p-4">
         {#if query.length === 0}
           <div class="p-12 text-center">
-            <p
-              class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground opacity-60"
-            >
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
               Start typing to search...
             </p>
           </div>
         {:else if filteredPosts.length === 0}
           <div class="p-12 text-center">
-            <p
-              class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground opacity-60"
-            >
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
               No results found for "{query}"
             </p>
           </div>
@@ -129,32 +125,29 @@
         <div class="flex items-center gap-6">
           <div class="flex items-center gap-2">
             <kbd
-              class="px-1.5 py-0.5 text-[10px] font-bold bg-background border border-border rounded shadow-sm"
+              class="px-1.5 py-0.5 text-xs font-bold bg-background border border-border rounded shadow-sm"
               >⏎</kbd
             >
-            <span
-              class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground opacity-60"
+            <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground"
               >to select</span
             >
           </div>
           <div class="flex items-center gap-2">
             <kbd
-              class="px-1.5 py-0.5 text-[10px] font-bold bg-background border border-border rounded shadow-sm"
+              class="px-1.5 py-0.5 text-xs font-bold bg-background border border-border rounded shadow-sm"
               >↑↓</kbd
             >
-            <span
-              class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground opacity-60"
+            <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground"
               >to navigate</span
             >
           </div>
         </div>
         <div class="flex items-center gap-2">
           <kbd
-            class="px-1.5 py-0.5 text-[10px] font-bold bg-background border border-border rounded shadow-sm"
+            class="px-1.5 py-0.5 text-xs font-bold bg-background border border-border rounded shadow-sm"
             >esc</kbd
           >
-          <span
-            class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground opacity-60"
+          <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground"
             >to close</span
           >
         </div>

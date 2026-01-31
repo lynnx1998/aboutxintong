@@ -17,6 +17,7 @@
           href={url}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Visit our ${name} page`}
           class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-all no-underline"
         >
           {name}

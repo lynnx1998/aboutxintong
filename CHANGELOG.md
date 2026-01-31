@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-01-31
+
+### Added
+
+- **Lighthouse 100/100/100/100**: Achieved perfect scores across Performance, Accessibility, Best Practices, and SEO.
+- **Font Preloading**: Implemented critical font preloading for `Outfit` and `Inter Variable` to eliminate request chains and reduce LCP.
+- **Responsive Images**: Optimized profile and hero images with multi-resolution scaling using Astro's `widths` and `sizes`.
+
+### Changed
+
+- **Accessibility Overhaul**:
+  - Increased minimum font sizes to 12px (`text-xs`) across all navigational and metadata elements.
+  - Hardened color contrast ratios to pass WCAG AAA (Zinc-900 for muted text).
+  - Improved link descriptions for screen readers and SEO (e.g., "See all posts" instead of "See all").
+- **Header Refinement**:
+  - Redesigned header to gracefully handle long site titles without layout breakage.
+  - Compacted navigation layout and gaps for better screen space efficiency.
+  - Improved typography tracking for better legibility on high-resolution displays.
+
+### Fixed
+
+- **Open Graph (OG) Previews**: Fixed absolute URL generation for social sharing previews by correctly configuring the production domain.
+- **Navigation Layout**: Resolved layout breakage on medium-sized screens (1024px) when using long site titles.
+
 ## [1.0.1] - 2026-01-31
 
 ### Security
@@ -42,5 +66,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+[1.1.0]: https://github.com/alec-c4/spaceship/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/alec-c4/spaceship/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/alec-c4/spaceship/releases/tag/v1.0.0

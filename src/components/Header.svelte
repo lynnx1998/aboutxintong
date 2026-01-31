@@ -17,12 +17,12 @@
 </script>
 
 <header
-  class="sticky top-0 z-50 backdrop-blur-md bg-background/80 flex flex-col lg:flex-row items-center justify-between py-4 sm:py-6 gap-6 sm:gap-8 border-b border-border transition-all duration-300"
+  class="sticky top-0 z-50 backdrop-blur-md bg-background/80 flex flex-col lg:flex-row items-center justify-between py-4 sm:py-5 gap-4 border-b border-border transition-all duration-300"
 >
   <div class="flex items-center justify-between w-full lg:w-auto">
     <a
       href="/"
-      class="text-xl sm:text-2xl font-black tracking-tighter text-foreground transition-all no-underline hover:text-primary"
+      class="text-xl sm:text-2xl font-black tracking-normal text-foreground transition-all no-underline hover:text-primary whitespace-nowrap"
     >
       {SITE.title}
     </a>
@@ -32,12 +32,12 @@
     </div>
   </div>
 
-  <nav class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 w-full lg:w-auto">
-    <div class="flex items-center justify-center flex-wrap gap-x-4 gap-y-2 sm:gap-6">
+  <nav class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full lg:w-auto">
+    <div class="flex items-center justify-center flex-nowrap gap-x-2 gap-y-2 sm:gap-4">
       {#each navLinks as link (link.name)}
         <a
           href={link.href}
-          class="px-2 py-1 rounded-md text-xs font-bold uppercase tracking-widest text-muted-foreground hover:bg-accent hover:text-primary transition-all shrink-0"
+          class="px-1.5 py-1 rounded-md text-xs font-bold uppercase tracking-widest text-muted-foreground hover:bg-accent hover:text-primary transition-all shrink-0"
         >
           {link.name}
         </a>

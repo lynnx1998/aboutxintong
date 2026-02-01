@@ -1,11 +1,3 @@
----
-title: 'How to Publish Posts in Spaceship'
-description: 'Complete guide to creating and publishing blog posts, including frontmatter options, image handling, and advanced features.'
-pubDate: 2026-02-01
-tags: ['tutorial', 'blogging', 'spaceship']
-featured: true
----
-
 This guide covers everything you need to know about creating and publishing blog posts in Spaceship.
 
 ## Creating a New Post

@@ -1,11 +1,3 @@
----
-title: 'Configuring Spaceship'
-description: 'Complete guide to customizing your Spaceship blog - from basic settings to advanced features.'
-pubDate: 2026-02-01
-tags: ['spaceship', 'configuration', 'tutorial']
-featured: true
----
-
 This guide covers all configuration options available in Spaceship and how to customize your blog.
 
 ## Configuration File

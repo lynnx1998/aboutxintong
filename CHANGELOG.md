@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Moved hero text to `site/hero.md` for easy editing.
   - Added markdown support for line breaks and formatting in the intro.
   - Preserved existing styling while allowing dynamic content.
+- **Consolidated Assets**:
+  - Merged `site/public` into `site/assets` to simplify project structure.
+  - Updated configuration to use `site/assets` as the single source for static and processed assets.
 
 ## [1.2.3] - 2026-02-01
 

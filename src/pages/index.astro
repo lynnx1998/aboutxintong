@@ -41,7 +41,7 @@ const appearances = (await getCollection('appearances'))
             const fullPath = join(process.cwd(), SITE.hero.filePath);
             const markdown = readFileSync(fullPath, 'utf-8');
             return parseMarkdown(markdown.replace('{author}', SITE.author));
-          } catch (e) {
+          } catch {
             return `<h1>I'm ${SITE.author}, developer and designer.</h1><p>${SITE.homeHeroDescription}</p>`;
           }
         })()}

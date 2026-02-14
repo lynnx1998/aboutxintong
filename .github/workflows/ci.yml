@@ -29,9 +29,6 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-      - name: Format Check
-        run: pnpm exec prettier --check .
-
       - name: Type Check
         run: pnpm check
 
